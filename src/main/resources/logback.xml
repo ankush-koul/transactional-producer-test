@@ -1,0 +1,18 @@
+<configuration>
+
+    <springProperty scope="context" name="logLevel" source="log.level"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}|[%65thread]|%60logger{36}|%-5level|%msg%n%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="${logLevel}">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <logger name="com.test" level="INFO" />
+    <logger name="org.apache.kafka.clients.consumer.ConsumerConfig" level="DEBUG" />
+    <logger name="org.apache.kafka.clients.consumer.ProducerConfig" level="DEBUG" />
+    <logger name="org.apache.kafka" level="INFO" />
+</configuration>

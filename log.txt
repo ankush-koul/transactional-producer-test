@@ -1,0 +1,845 @@
+"C:\Program Files\Java\jdk1.8.0_211\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.4\lib\idea_rt.jar=64076:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.4\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Users\akoul680\intellij-workspace\transactional-producer-test\target\classes;C:\Users\akoul680\.m2\repository\org\springframework\kafka\spring-kafka\2.3.5.RELEASE\spring-kafka-2.3.5.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\apache\kafka\kafka-clients\2.3.1\kafka-clients-2.3.1.jar;C:\Users\akoul680\.m2\repository\com\github\luben\zstd-jni\1.4.0-1\zstd-jni-1.4.0-1.jar;C:\Users\akoul680\.m2\repository\org\lz4\lz4-java\1.6.0\lz4-java-1.6.0.jar;C:\Users\akoul680\.m2\repository\org\xerial\snappy\snappy-java\1.1.7.3\snappy-java-1.1.7.3.jar;C:\Users\akoul680\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\akoul680\.m2\repository\org\springframework\retry\spring-retry\1.2.5.RELEASE\spring-retry-1.2.5.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\spring-context\5.2.3.RELEASE\spring-context-5.2.3.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\spring-aop\5.2.3.RELEASE\spring-aop-5.2.3.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\spring-beans\5.2.3.RELEASE\spring-beans-5.2.3.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\spring-core\5.2.3.RELEASE\spring-core-5.2.3.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\spring-jcl\5.2.3.RELEASE\spring-jcl-5.2.3.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\spring-expression\5.2.3.RELEASE\spring-expression-5.2.3.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\spring-messaging\5.2.3.RELEASE\spring-messaging-5.2.3.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\spring-tx\5.2.3.RELEASE\spring-tx-5.2.3.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.2.4.RELEASE\spring-boot-starter-validation-2.2.4.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\boot\spring-boot-starter\2.2.4.RELEASE\spring-boot-starter-2.2.4.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\boot\spring-boot\2.2.4.RELEASE\spring-boot-2.2.4.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.2.4.RELEASE\spring-boot-autoconfigure-2.2.4.RELEASE.jar;C:\Users\akoul680\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.2.4.RELEASE\spring-boot-starter-logging-2.2.4.RELEASE.jar;C:\Users\akoul680\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\akoul680\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\akoul680\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.12.1\log4j-to-slf4j-2.12.1.jar;C:\Users\akoul680\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;C:\Users\akoul680\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\akoul680\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\akoul680\.m2\repository\org\yaml\snakeyaml\1.25\snakeyaml-1.25.jar;C:\Users\akoul680\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\akoul680\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.30\tomcat-embed-el-9.0.30.jar;C:\Users\akoul680\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;C:\Users\akoul680\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\akoul680\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar" com.test.QuickTestApp
+10:44:08,626 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+10:44:08,626 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+10:44:08,626 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/akoul680/intellij-workspace/transactional-producer-test/target/classes/logback.xml]
+10:44:08,726 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+10:44:08,726 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@3:73 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+10:44:08,726 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+10:44:08,742 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+10:44:08,742 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+10:44:08,795 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+10:44:08,795 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+10:44:08,795 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.test] to INFO
+10:44:08,795 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.kafka.clients.consumer.ConsumerConfig] to DEBUG
+10:44:08,795 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.kafka.clients.consumer.ProducerConfig] to DEBUG
+10:44:08,795 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.kafka] to INFO
+10:44:08,795 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+10:44:08,810 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@19bb089b - Registering current configuration as safe fallback point
+
+2020-04-07 10:44:09.440|[                                                             main]|               o.s.b.c.l.ClasspathLoggingApplicationListener|DEBUG|Application started with classpath: [file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/charsets.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/deploy.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/access-bridge-64.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/cldrdata.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/dnsns.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/jaccess.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/jfxrt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/localedata.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/nashorn.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/sunec.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/sunjce_provider.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/sunmscapi.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/sunpkcs11.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/ext/zipfs.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/javaws.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/jce.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/jfr.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/jfxswt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/jsse.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/management-agent.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/plugin.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/resources.jar, file:/C:/Program%20Files/Java/jdk1.8.0_211/jre/lib/rt.jar, file:/C:/Users/akoul680/intellij-workspace/transactional-producer-test/target/classes/, file:/C:/Users/akoul680/.m2/repository/org/springframework/kafka/spring-kafka/2.3.5.RELEASE/spring-kafka-2.3.5.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/apache/kafka/kafka-clients/2.3.1/kafka-clients-2.3.1.jar, file:/C:/Users/akoul680/.m2/repository/com/github/luben/zstd-jni/1.4.0-1/zstd-jni-1.4.0-1.jar, file:/C:/Users/akoul680/.m2/repository/org/lz4/lz4-java/1.6.0/lz4-java-1.6.0.jar, file:/C:/Users/akoul680/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.3/snappy-java-1.1.7.3.jar, file:/C:/Users/akoul680/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/retry/spring-retry/1.2.5.RELEASE/spring-retry-1.2.5.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/spring-aop/5.2.3.RELEASE/spring-aop-5.2.3.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/spring-beans/5.2.3.RELEASE/spring-beans-5.2.3.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/spring-core/5.2.3.RELEASE/spring-core-5.2.3.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/spring-jcl/5.2.3.RELEASE/spring-jcl-5.2.3.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/spring-expression/5.2.3.RELEASE/spring-expression-5.2.3.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/spring-messaging/5.2.3.RELEASE/spring-messaging-5.2.3.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/spring-tx/5.2.3.RELEASE/spring-tx-5.2.3.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.2.4.RELEASE/spring-boot-starter-validation-2.2.4.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/boot/spring-boot-starter/2.2.4.RELEASE/spring-boot-starter-2.2.4.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/boot/spring-boot/2.2.4.RELEASE/spring-boot-2.2.4.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.2.4.RELEASE/spring-boot-autoconfigure-2.2.4.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.2.4.RELEASE/spring-boot-starter-logging-2.2.4.RELEASE.jar, file:/C:/Users/akoul680/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, file:/C:/Users/akoul680/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, file:/C:/Users/akoul680/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.12.1/log4j-to-slf4j-2.12.1.jar, file:/C:/Users/akoul680/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar, file:/C:/Users/akoul680/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar, file:/C:/Users/akoul680/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar, file:/C:/Users/akoul680/.m2/repository/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar, file:/C:/Users/akoul680/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar, file:/C:/Users/akoul680/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.30/tomcat-embed-el-9.0.30.jar, file:/C:/Users/akoul680/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.18.Final/hibernate-validator-6.0.18.Final.jar, file:/C:/Users/akoul680/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar, file:/C:/Users/akoul680/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar, file:/C:/Program%20Files/JetBrains/IntelliJ%20IDEA%20Community%20Edition%202019.2.4/lib/idea_rt.jar]
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+2020-04-07 10:44:09.548|[                                                             main]|                                       com.test.QuickTestApp|INFO |Starting QuickTestApp on HDQBELT304439 with PID 106256 (C:\Users\akoul680\intellij-workspace\transactional-producer-test\target\classes started by akoul680 in C:\Users\akoul680\intellij-workspace\transactional-producer-test)
+
+2020-04-07 10:44:09.549|[                                                             main]|                                       com.test.QuickTestApp|INFO |No active profile set, falling back to default profiles: default
+
+2020-04-07 10:44:09.549|[                                                             main]|                                  o.s.boot.SpringApplication|DEBUG|Loading source class com.test.QuickTestApp
+
+2020-04-07 10:44:09.593|[                                                             main]|                     o.s.b.c.c.ConfigFileApplicationListener|DEBUG|Loaded config file 'file:/C:/Users/akoul680/intellij-workspace/transactional-producer-test/target/classes/application.yml' (classpath:/application.yml)
+
+2020-04-07 10:44:09.593|[                                                             main]|                  o.s.c.a.AnnotationConfigApplicationContext|DEBUG|Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1a677343
+
+2020-04-07 10:44:09.624|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+
+2020-04-07 10:44:09.639|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+
+2020-04-07 10:44:09.734|[                                                             main]|                      o.s.c.a.ClassPathBeanDefinitionScanner|DEBUG|Identified candidate component class: file [C:\Users\akoul680\intellij-workspace\transactional-producer-test\target\classes\com\test\QuickTest.class]
+
+2020-04-07 10:44:09.987|[                                                             main]|                     o.s.c.e.PropertySourcesPropertyResolver|DEBUG|Found key 'spring.kafka.producer.transaction-id-prefix' in PropertySource 'configurationProperties' with value of type String
+
+2020-04-07 10:44:10.150|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+
+2020-04-07 10:44:10.150|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator'
+
+2020-04-07 10:44:10.187|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+
+2020-04-07 10:44:10.187|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+
+2020-04-07 10:44:10.187|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+
+2020-04-07 10:44:10.187|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+
+2020-04-07 10:44:10.187|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+
+2020-04-07 10:44:10.187|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+
+2020-04-07 10:44:10.187|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+
+2020-04-07 10:44:10.187|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+
+2020-04-07 10:44:10.203|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+
+2020-04-07 10:44:10.203|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+
+2020-04-07 10:44:10.234|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.kafka.config.internalKafkaListenerAnnotationProcessor'
+
+2020-04-07 10:44:10.234|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+
+2020-04-07 10:44:10.272|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'methodValidationPostProcessor'
+
+2020-04-07 10:44:10.288|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'methodValidationPostProcessor' via factory method to bean named 'environment'
+
+2020-04-07 10:44:10.303|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'quickTestApp'
+
+2020-04-07 10:44:10.303|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+
+2020-04-07 10:44:10.303|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+
+2020-04-07 10:44:10.319|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration
+
+2020-04-07 10:44:10.319|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'transactionAttributeSource'
+
+2020-04-07 10:44:10.334|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource
+
+2020-04-07 10:44:10.334|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'transactionInterceptor'
+
+2020-04-07 10:44:10.334|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+
+2020-04-07 10:44:10.334|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.transaction.interceptor.TransactionInterceptor
+
+2020-04-07 10:44:10.350|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+
+2020-04-07 10:44:10.350|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+
+2020-04-07 10:44:10.350|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor
+
+2020-04-07 10:44:10.350|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class com.test.QuickTestApp$$EnhancerBySpringCGLIB$$69554197
+
+2020-04-07 10:44:10.350|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'quickTest'
+
+2020-04-07 10:44:10.350|[                                                             main]|                     o.s.c.e.PropertySourcesPropertyResolver|DEBUG|Found key 'response.topic' in PropertySource 'configurationProperties' with value of type String
+
+2020-04-07 10:44:10.350|[                                                             main]|                     o.s.c.e.PropertySourcesPropertyResolver|DEBUG|Found key 'response.topic' in PropertySource 'environmentProperties' with value of type String
+
+2020-04-07 10:44:10.350|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'kafkaTemplate'
+
+2020-04-07 10:44:10.350|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration'
+
+2020-04-07 10:44:10.366|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'spring.kafka-org.springframework.boot.autoconfigure.kafka.KafkaProperties'
+
+2020-04-07 10:44:10.403|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.kafka.KafkaProperties
+
+2020-04-07 10:44:10.403|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration' via constructor to bean named 'spring.kafka-org.springframework.boot.autoconfigure.kafka.KafkaProperties'
+
+2020-04-07 10:44:10.403|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration
+
+2020-04-07 10:44:10.403|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'kafkaProducerFactory'
+
+2020-04-07 10:44:10.471|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.kafka.core.DefaultKafkaProducerFactory
+
+2020-04-07 10:44:10.472|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'kafkaProducerListener'
+
+2020-04-07 10:44:10.476|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.kafka.support.LoggingProducerListener
+
+2020-04-07 10:44:10.478|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'kafkaTemplate' via factory method to bean named 'kafkaProducerFactory'
+
+2020-04-07 10:44:10.479|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'kafkaTemplate' via factory method to bean named 'kafkaProducerListener'
+
+2020-04-07 10:44:10.502|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.kafka.core.KafkaTemplate
+
+2020-04-07 10:44:10.502|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'quickTest' via constructor to bean named 'kafkaTemplate'
+
+2020-04-07 10:44:10.510|[                                                             main]|                     o.s.c.e.PropertySourcesPropertyResolver|DEBUG|Found key 'request.topic' in PropertySource 'configurationProperties' with value of type String
+
+2020-04-07 10:44:10.510|[                                                             main]|                     o.s.c.e.PropertySourcesPropertyResolver|DEBUG|Found key 'request.topic' in PropertySource 'environmentProperties' with value of type String
+
+2020-04-07 10:44:10.530|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|DEBUG|1 @KafkaListener methods processed on bean 'quickTest': {public void com.test.QuickTest.listen(java.lang.String)=[@org.springframework.kafka.annotation.KafkaListener(autoStartup=, beanRef=__listener, clientIdPrefix=MyConsumer, concurrency=, containerFactory=, containerGroup=, errorHandler=, groupId=, id=, idIsGroup=true, properties=[], splitIterables=true, topicPartitions=[], topicPattern=, topics=[${request.topic}])]}
+
+2020-04-07 10:44:10.531|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+
+2020-04-07 10:44:10.533|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages
+
+2020-04-07 10:44:10.534|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+
+2020-04-07 10:44:10.537|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+2020-04-07 10:44:10.538|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
+
+2020-04-07 10:44:10.539|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@11392934'
+
+2020-04-07 10:44:10.549|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration
+
+2020-04-07 10:44:10.549|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+
+2020-04-07 10:44:10.550|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.aop.AopAutoConfiguration
+
+2020-04-07 10:44:10.550|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+
+2020-04-07 10:44:10.551|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+2020-04-07 10:44:10.552|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+
+2020-04-07 10:44:10.553|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata
+
+2020-04-07 10:44:10.553|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration'
+
+2020-04-07 10:44:10.555|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration
+
+2020-04-07 10:44:10.555|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+
+2020-04-07 10:44:10.557|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+
+2020-04-07 10:44:10.561|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.info.ProjectInfoProperties
+
+2020-04-07 10:44:10.561|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+
+2020-04-07 10:44:10.563|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+2020-04-07 10:44:10.563|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.kafka.KafkaAnnotationDrivenConfiguration$EnableKafkaConfiguration'
+
+2020-04-07 10:44:10.564|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.kafka.KafkaAnnotationDrivenConfiguration$EnableKafkaConfiguration
+
+2020-04-07 10:44:10.564|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+
+2020-04-07 10:44:10.566|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.kafka.config.KafkaListenerEndpointRegistry
+
+2020-04-07 10:44:10.566|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.kafka.KafkaAnnotationDrivenConfiguration'
+
+2020-04-07 10:44:10.569|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'org.springframework.boot.autoconfigure.kafka.KafkaAnnotationDrivenConfiguration' via constructor to bean named 'spring.kafka-org.springframework.boot.autoconfigure.kafka.KafkaProperties'
+
+2020-04-07 10:44:10.572|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'kafkaTransactionManager'
+
+2020-04-07 10:44:10.576|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'kafkaTransactionManager' via factory method to bean named 'kafkaProducerFactory'
+
+2020-04-07 10:44:10.584|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.kafka.transaction.KafkaTransactionManager
+
+2020-04-07 10:44:10.586|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.kafka.KafkaAnnotationDrivenConfiguration
+
+2020-04-07 10:44:10.587|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'kafkaListenerContainerFactoryConfigurer'
+
+2020-04-07 10:44:10.589|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.kafka.ConcurrentKafkaListenerContainerFactoryConfigurer
+
+2020-04-07 10:44:10.594|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'kafkaListenerContainerFactory'
+
+2020-04-07 10:44:10.623|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'kafkaConsumerFactory'
+
+2020-04-07 10:44:10.647|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.kafka.core.DefaultKafkaConsumerFactory
+
+2020-04-07 10:44:10.648|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'kafkaListenerContainerFactory' via factory method to bean named 'kafkaListenerContainerFactoryConfigurer'
+
+2020-04-07 10:44:10.648|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'kafkaListenerContainerFactory' via factory method to bean named 'kafkaConsumerFactory'
+
+2020-04-07 10:44:11.035|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory
+
+2020-04-07 10:44:11.040|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'kafkaAdmin'
+
+2020-04-07 10:44:11.047|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.kafka.core.KafkaAdmin
+
+2020-04-07 10:44:11.047|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+
+2020-04-07 10:44:11.048|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration
+
+2020-04-07 10:44:11.048|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'taskExecutorBuilder'
+
+2020-04-07 10:44:11.049|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+
+2020-04-07 10:44:11.052|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.task.TaskExecutionProperties
+
+2020-04-07 10:44:11.052|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+
+2020-04-07 10:44:11.062|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.task.TaskExecutorBuilder
+
+2020-04-07 10:44:11.062|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+
+2020-04-07 10:44:11.064|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration
+
+2020-04-07 10:44:11.064|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'taskSchedulerBuilder'
+
+2020-04-07 10:44:11.065|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+
+2020-04-07 10:44:11.079|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.task.TaskSchedulingProperties
+
+2020-04-07 10:44:11.080|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+
+2020-04-07 10:44:11.090|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.task.TaskSchedulerBuilder
+
+2020-04-07 10:44:11.091|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration'
+
+2020-04-07 10:44:11.092|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration
+
+2020-04-07 10:44:11.092|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration'
+
+2020-04-07 10:44:11.093|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration
+
+2020-04-07 10:44:11.093|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration'
+
+2020-04-07 10:44:11.095|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration
+
+2020-04-07 10:44:11.096|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'transactionTemplate'
+
+2020-04-07 10:44:11.096|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Autowiring by type from bean name 'transactionTemplate' via factory method to bean named 'kafkaTransactionManager'
+
+2020-04-07 10:44:11.105|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.transaction.support.TransactionTemplate
+
+2020-04-07 10:44:11.106|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
+
+2020-04-07 10:44:11.107|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration
+
+2020-04-07 10:44:11.107|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
+
+2020-04-07 10:44:11.109|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties'
+
+2020-04-07 10:44:11.141|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.transaction.TransactionProperties
+
+2020-04-07 10:44:11.142|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers
+
+2020-04-07 10:44:11.142|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration'
+
+2020-04-07 10:44:11.143|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration
+
+2020-04-07 10:44:11.144|[                                                             main]|                        o.s.b.f.s.DefaultListableBeanFactory|DEBUG|Creating shared instance of singleton bean 'defaultValidator'
+
+2020-04-07 10:44:11.147|[                                                             main]|                            o.h.v.i.e.r.TraversableResolvers|DEBUG|Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+
+2020-04-07 10:44:11.149|[                                                             main]|                   o.h.v.m.ResourceBundleMessageInterpolator|DEBUG|Loaded expression factory via original TCCL
+
+2020-04-07 10:44:11.151|[                                                             main]|                            o.h.v.i.e.r.TraversableResolvers|DEBUG|Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+
+2020-04-07 10:44:11.152|[                                                             main]|                            o.h.v.i.engine.ConfigurationImpl|DEBUG|Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+
+2020-04-07 10:44:11.153|[                                                             main]|                            o.h.v.i.engine.ConfigurationImpl|DEBUG|Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+
+2020-04-07 10:44:11.153|[                                                             main]|                            o.h.v.i.engine.ConfigurationImpl|DEBUG|Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+
+2020-04-07 10:44:11.154|[                                                             main]|                        o.h.v.i.x.config.ValidationXmlParser|DEBUG|Trying to load META-INF/validation.xml for XML based Validator configuration.
+
+2020-04-07 10:44:11.154|[                                                             main]|                            o.h.v.i.x.c.ResourceLoaderHelper|DEBUG|Trying to load META-INF/validation.xml via user class loader
+
+2020-04-07 10:44:11.155|[                                                             main]|                            o.h.v.i.x.c.ResourceLoaderHelper|DEBUG|Trying to load META-INF/validation.xml via TCCL
+
+2020-04-07 10:44:11.155|[                                                             main]|                            o.h.v.i.x.c.ResourceLoaderHelper|DEBUG|Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+
+2020-04-07 10:44:11.155|[                                                             main]|                        o.h.v.i.x.config.ValidationXmlParser|DEBUG|No META-INF/validation.xml found. Using annotation based configuration only.
+
+2020-04-07 10:44:11.163|[                                                             main]|                         o.h.v.i.engine.ValidatorFactoryImpl|DEBUG|HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+
+2020-04-07 10:44:11.163|[                                                             main]|                         o.h.v.i.engine.ValidatorFactoryImpl|DEBUG|HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+
+2020-04-07 10:44:11.163|[                                                             main]|                         o.h.v.i.engine.ValidatorFactoryImpl|DEBUG|HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+
+2020-04-07 10:44:11.163|[                                                             main]|                         o.h.v.i.engine.ValidatorFactoryImpl|DEBUG|HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+
+2020-04-07 10:44:11.163|[                                                             main]|                         o.h.v.i.engine.ValidatorFactoryImpl|DEBUG|HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+
+2020-04-07 10:44:11.167|[                                                             main]|            o.s.k.a.KafkaListenerAnnotationBeanPostProcessor|TRACE|No @KafkaListener annotations found on bean type: class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean
+
+2020-04-07 10:44:11.606|[                                                             main]|                           o.s.c.s.DefaultLifecycleProcessor|DEBUG|Starting beans in phase 2147483547
+
+2020-04-07 10:44:11.620|[                                                             main]|                             o.a.k.c.admin.AdminClientConfig|INFO |AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+
+2020-04-07 10:44:11.681|[                                                             main]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka version: 2.3.1
+
+2020-04-07 10:44:11.681|[                                                             main]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka commitId: 18a913733fb71c01
+
+2020-04-07 10:44:11.681|[                                                             main]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka startTimeMs: 1586270651681
+
+2020-04-07 10:44:11.862|[                                                             main]|                             o.a.k.c.consumer.ConsumerConfig|INFO |ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = MyConsumer-0
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = g21
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_committed
+	key.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 600000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+
+2020-04-07 10:44:11.883|[                                                             main]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka version: 2.3.1
+
+2020-04-07 10:44:11.883|[                                                             main]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka commitId: 18a913733fb71c01
+
+2020-04-07 10:44:11.883|[                                                             main]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka startTimeMs: 1586270651883
+
+2020-04-07 10:44:11.883|[                                                             main]|                        o.a.k.clients.consumer.KafkaConsumer|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] Subscribed to topic(s): req-tpc
+
+2020-04-07 10:44:11.883|[                                                             main]|                             o.s.s.c.ThreadPoolTaskScheduler|INFO |Initializing ExecutorService
+
+2020-04-07 10:44:11.899|[                                                             main]|                           o.s.c.s.DefaultLifecycleProcessor|DEBUG|Successfully started bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+
+2020-04-07 10:44:11.899|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Commit list: {}
+
+2020-04-07 10:44:11.899|[                                                             main]|                                       com.test.QuickTestApp|INFO |Started QuickTestApp in 2.924 seconds (JVM running for 3.528)
+
+2020-04-07 10:44:11.914|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                           org.apache.kafka.clients.Metadata|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] Cluster ID: 4o1_Lc1mSGeSstCKZeLVUA
+
+2020-04-07 10:44:11.914|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.c.i.AbstractCoordinator|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] Discovered group coordinator HDQBELT304439.mihdq.marrcorp.marriott.com:9092 (id: 2147483646 rack: null)
+
+2020-04-07 10:44:11.914|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.c.i.ConsumerCoordinator|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] Revoking previously assigned partitions []
+
+2020-04-07 10:44:11.914|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                       o.s.k.l.KafkaMessageListenerContainer|INFO |g21: partitions revoked: []
+
+2020-04-07 10:44:11.914|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Commit list: {}
+
+2020-04-07 10:44:11.914|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.c.i.AbstractCoordinator|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] (Re-)joining group
+
+2020-04-07 10:44:11.914|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.c.i.AbstractCoordinator|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] (Re-)joining group
+
+2020-04-07 10:44:11.930|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.c.i.AbstractCoordinator|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] Successfully joined group with generation 6
+
+2020-04-07 10:44:11.930|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.c.i.ConsumerCoordinator|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] Setting newly assigned partitions: req-tpc-1, req-tpc-0, req-tpc-2
+
+2020-04-07 10:44:11.930|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.c.i.ConsumerCoordinator|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] Setting offset for partition req-tpc-2 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=HDQBELT304439.mihdq.marrcorp.marriott.com:9092 (id: 1 rack: null), epoch=0}}
+
+2020-04-07 10:44:11.930|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.c.i.ConsumerCoordinator|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] Setting offset for partition req-tpc-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=HDQBELT304439.mihdq.marrcorp.marriott.com:9092 (id: 1 rack: null), epoch=0}}
+
+2020-04-07 10:44:11.930|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.c.i.ConsumerCoordinator|INFO |[Consumer clientId=MyConsumer-0, groupId=g21] Setting offset for partition req-tpc-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=HDQBELT304439.mihdq.marrcorp.marriott.com:9092 (id: 1 rack: null), epoch=0}}
+
+2020-04-07 10:44:11.930|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Committing on assignment: {req-tpc-1=OffsetAndMetadata{offset=2, leaderEpoch=null, metadata=''}, req-tpc-0=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, req-tpc-2=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}}
+
+2020-04-07 10:44:11.930|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Creating new transaction with name [null]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+
+2020-04-07 10:44:11.946|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.producer.ProducerConfig|INFO |ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 180000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = transactionx-g21.req-tpc.1
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+
+2020-04-07 10:44:11.946|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.k.clients.producer.KafkaProducer|INFO |[Producer clientId=producer-1, transactionalId=transactionx-g21.req-tpc.1] Instantiated a transactional producer.
+
+2020-04-07 10:44:11.965|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.k.clients.producer.KafkaProducer|INFO |[Producer clientId=producer-1, transactionalId=transactionx-g21.req-tpc.1] Overriding the default retries config to the recommended value of 2147483647 since the idempotent producer is enabled.
+
+2020-04-07 10:44:11.965|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka version: 2.3.1
+
+2020-04-07 10:44:11.965|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka commitId: 18a913733fb71c01
+
+2020-04-07 10:44:11.965|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka startTimeMs: 1586270651965
+
+2020-04-07 10:44:11.965|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                              o.a.k.c.p.i.TransactionManager|INFO |[Producer clientId=producer-1, transactionalId=transactionx-g21.req-tpc.1] ProducerId set to -1 with epoch -1
+
+2020-04-07 10:44:12.066|[                       kafka-producer-network-thread | producer-1]|                           org.apache.kafka.clients.Metadata|INFO |[Producer clientId=producer-1, transactionalId=transactionx-g21.req-tpc.1] Cluster ID: 4o1_Lc1mSGeSstCKZeLVUA
+
+2020-04-07 10:44:12.066|[                       kafka-producer-network-thread | producer-1]|                              o.a.k.c.p.i.TransactionManager|INFO |[Producer clientId=producer-1, transactionalId=transactionx-g21.req-tpc.1] ProducerId set to 0 with epoch 3
+
+2020-04-07 10:44:12.066|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|DEBUG|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@52da70aa, txId=transactionx-g21.req-tpc.1] beginTransaction()
+
+2020-04-07 10:44:12.066|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Created Kafka transaction on producer [CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@52da70aa, txId=transactionx-g21.req-tpc.1]]
+
+2020-04-07 10:44:12.066|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|TRACE|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@52da70aa, txId=transactionx-g21.req-tpc.1] sendOffsetsToTransaction({req-tpc-1=OffsetAndMetadata{offset=2, leaderEpoch=null, metadata=''}}, g21)
+
+2020-04-07 10:44:12.182|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Initiating transaction commit
+
+2020-04-07 10:44:12.182|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|DEBUG|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@52da70aa, txId=transactionx-g21.req-tpc.1] commitTransaction()
+
+2020-04-07 10:44:12.182|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|TRACE|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@52da70aa, txId=transactionx-g21.req-tpc.1] close(PT5S)
+
+2020-04-07 10:44:12.182|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Creating new transaction with name [null]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+
+2020-04-07 10:44:12.182|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.producer.ProducerConfig|INFO |ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 180000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = transactionx-g21.req-tpc.0
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+
+2020-04-07 10:44:12.182|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.k.clients.producer.KafkaProducer|INFO |[Producer clientId=producer-2, transactionalId=transactionx-g21.req-tpc.0] Instantiated a transactional producer.
+
+2020-04-07 10:44:12.197|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.k.clients.producer.KafkaProducer|INFO |[Producer clientId=producer-2, transactionalId=transactionx-g21.req-tpc.0] Overriding the default retries config to the recommended value of 2147483647 since the idempotent producer is enabled.
+
+2020-04-07 10:44:12.197|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka version: 2.3.1
+
+2020-04-07 10:44:12.197|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka commitId: 18a913733fb71c01
+
+2020-04-07 10:44:12.197|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka startTimeMs: 1586270652197
+
+2020-04-07 10:44:12.197|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                              o.a.k.c.p.i.TransactionManager|INFO |[Producer clientId=producer-2, transactionalId=transactionx-g21.req-tpc.0] ProducerId set to -1 with epoch -1
+
+2020-04-07 10:44:12.297|[                       kafka-producer-network-thread | producer-2]|                           org.apache.kafka.clients.Metadata|INFO |[Producer clientId=producer-2, transactionalId=transactionx-g21.req-tpc.0] Cluster ID: 4o1_Lc1mSGeSstCKZeLVUA
+
+2020-04-07 10:44:12.297|[                       kafka-producer-network-thread | producer-2]|                              o.a.k.c.p.i.TransactionManager|INFO |[Producer clientId=producer-2, transactionalId=transactionx-g21.req-tpc.0] ProducerId set to 1 with epoch 3
+
+2020-04-07 10:44:12.297|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|DEBUG|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0] beginTransaction()
+
+2020-04-07 10:44:12.297|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Created Kafka transaction on producer [CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0]]
+
+2020-04-07 10:44:12.297|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|TRACE|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0] sendOffsetsToTransaction({req-tpc-0=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}}, g21)
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Initiating transaction commit
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|DEBUG|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0] commitTransaction()
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|TRACE|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0] close(PT5S)
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Creating new transaction with name [null]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.a.k.c.producer.ProducerConfig|INFO |ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 180000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = transactionx-g21.req-tpc.2
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.k.clients.producer.KafkaProducer|INFO |[Producer clientId=producer-3, transactionalId=transactionx-g21.req-tpc.2] Instantiated a transactional producer.
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.k.clients.producer.KafkaProducer|INFO |[Producer clientId=producer-3, transactionalId=transactionx-g21.req-tpc.2] Overriding the default retries config to the recommended value of 2147483647 since the idempotent producer is enabled.
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka version: 2.3.1
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka commitId: 18a913733fb71c01
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                        o.a.kafka.common.utils.AppInfoParser|INFO |Kafka startTimeMs: 1586270652398
+
+2020-04-07 10:44:12.398|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                              o.a.k.c.p.i.TransactionManager|INFO |[Producer clientId=producer-3, transactionalId=transactionx-g21.req-tpc.2] ProducerId set to -1 with epoch -1
+
+2020-04-07 10:44:12.498|[                       kafka-producer-network-thread | producer-3]|                           org.apache.kafka.clients.Metadata|INFO |[Producer clientId=producer-3, transactionalId=transactionx-g21.req-tpc.2] Cluster ID: 4o1_Lc1mSGeSstCKZeLVUA
+
+2020-04-07 10:44:12.498|[                       kafka-producer-network-thread | producer-3]|                              o.a.k.c.p.i.TransactionManager|INFO |[Producer clientId=producer-3, transactionalId=transactionx-g21.req-tpc.2] ProducerId set to 2 with epoch 3
+
+2020-04-07 10:44:12.498|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|DEBUG|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@607eaa1b, txId=transactionx-g21.req-tpc.2] beginTransaction()
+
+2020-04-07 10:44:12.498|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Created Kafka transaction on producer [CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@607eaa1b, txId=transactionx-g21.req-tpc.2]]
+
+2020-04-07 10:44:12.498|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|TRACE|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@607eaa1b, txId=transactionx-g21.req-tpc.2] sendOffsetsToTransaction({req-tpc-2=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}}, g21)
+
+2020-04-07 10:44:12.598|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Initiating transaction commit
+
+2020-04-07 10:44:12.598|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|DEBUG|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@607eaa1b, txId=transactionx-g21.req-tpc.2] commitTransaction()
+
+2020-04-07 10:44:12.598|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|TRACE|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@607eaa1b, txId=transactionx-g21.req-tpc.2] close(PT5S)
+
+2020-04-07 10:44:12.598|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                       o.s.k.l.KafkaMessageListenerContainer|INFO |g21: partitions assigned: [req-tpc-1, req-tpc-0, req-tpc-2]
+
+2020-04-07 10:44:16.902|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Received: 0 records
+
+2020-04-07 10:44:16.903|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Commit list: {}
+
+2020-04-07 10:44:21.908|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Received: 0 records
+
+2020-04-07 10:44:21.908|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Commit list: {}
+
+2020-04-07 10:44:26.917|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Received: 0 records
+
+2020-04-07 10:44:26.917|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Commit list: {}
+
+2020-04-07 10:44:27.601|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Received: 1 records
+
+2020-04-07 10:44:27.601|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|TRACE|[req-tpc-0@0]
+
+2020-04-07 10:44:27.601|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|TRACE|Processing ConsumerRecord(topic = req-tpc, partition = 0, leaderEpoch = 0, offset = 0, CreateTime = 1586270666599, serialized key size = -1, serialized value size = 4, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Test)
+
+2020-04-07 10:44:27.601|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Creating new transaction with name [null]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+
+2020-04-07 10:44:27.601|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|DEBUG|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0] beginTransaction()
+
+2020-04-07 10:44:27.601|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Created Kafka transaction on producer [CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0]]
+
+2020-04-07 10:44:27.601|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|             o.s.k.l.a.RecordMessagingMessageListenerAdapter|DEBUG|Processing [GenericMessage [payload=Test, headers={kafka_offset=0, kafka_consumer=org.apache.kafka.clients.consumer.KafkaConsumer@36feb6ef, kafka_timestampType=CREATE_TIME, kafka_receivedMessageKey=null, kafka_receivedPartitionId=0, kafka_receivedTopic=req-tpc, kafka_receivedTimestamp=1586270666599, kafka_groupId=g21}]]
+
+2020-04-07 10:44:27.601|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                                o.s.kafka.core.KafkaTemplate|TRACE|Sending: ProducerRecord(topic=resp-tpc, partition=4, headers=RecordHeaders(headers = [], isReadOnly = false), key=123456789, value=null, timestamp=null)
+
+2020-04-07 10:44:27.601|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|TRACE|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0] send(ProducerRecord(topic=resp-tpc, partition=4, headers=RecordHeaders(headers = [], isReadOnly = false), key=123456789, value=null, timestamp=null))
+
+2020-04-07 10:45:27.603|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.s.LoggingProducerListener|ERROR|Exception thrown when sending a message with key='123456789' and payload='null' to topic resp-tpc and partition 4:
+
+org.apache.kafka.common.errors.TimeoutException: Topic resp-tpc not present in metadata after 60000 ms.
+2020-04-07 10:45:27.603|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                                o.s.kafka.core.KafkaTemplate|DEBUG|Failed to send: ProducerRecord(topic=resp-tpc, partition=4, headers=RecordHeaders(headers = [], isReadOnly = false), key=123456789, value=null, timestamp=null)
+
+org.apache.kafka.common.errors.TimeoutException: Topic resp-tpc not present in metadata after 60000 ms.
+2020-04-07 10:45:27.603|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                                o.s.kafka.core.KafkaTemplate|TRACE|Sent: ProducerRecord(topic=resp-tpc, partition=4, headers=RecordHeaders(headers = [], isReadOnly = false), key=123456789, value=null, timestamp=null)
+
+2020-04-07 10:45:27.603|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|TRACE|Ack: ConsumerRecord(topic = req-tpc, partition = 0, leaderEpoch = 0, offset = 0, CreateTime = 1586270666599, serialized key size = -1, serialized value size = 4, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Test)
+
+2020-04-07 10:45:27.603|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Sending offsets to transaction: {req-tpc-0=OffsetAndMetadata{offset=1, leaderEpoch=null, metadata=''}}
+
+2020-04-07 10:45:27.603|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|TRACE|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0] sendOffsetsToTransaction({req-tpc-0=OffsetAndMetadata{offset=1, leaderEpoch=null, metadata=''}}, g21)
+
+2020-04-07 10:45:27.603|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                             o.s.k.t.KafkaTransactionManager|DEBUG|Initiating transaction commit
+
+2020-04-07 10:45:27.603|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|DEBUG|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0] commitTransaction()
+
+2020-04-07 10:45:27.603|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|                         o.s.k.c.DefaultKafkaProducerFactory|TRACE|CloseSafeProducer [delegate=org.apache.kafka.clients.producer.KafkaProducer@412bd066, txId=transactionx-g21.req-tpc.0] close(PT5S)
+
+2020-04-07 10:45:27.603|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Commit list: {}
+
+2020-04-07 10:45:32.607|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Received: 0 records
+
+2020-04-07 10:45:32.607|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Commit list: {}
+
+2020-04-07 10:45:37.614|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Received: 0 records
+
+2020-04-07 10:45:37.614|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Commit list: {}
+
+2020-04-07 10:45:42.623|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Received: 0 records
+
+2020-04-07 10:45:42.623|[ org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1]|      o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer|DEBUG|Commit list: {}
+
